@@ -1,3 +1,5 @@
 = wiki
 
 link:EnableRepo.adoc[Set up cppfw repository]
+
+link:NamingConventions.adoc[Naming conventions]
