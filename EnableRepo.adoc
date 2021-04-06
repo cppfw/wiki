@@ -1,6 +1,6 @@
 = enable packet system repository
 
-- link:EnableRepoDeb.adoc[**deb**] (Linux)
+- link:enable_repo_debian.adoc[**deb**] (Linux)
 - link:EnableRepoHomebrew.adoc[**homebrew**] (Mac OS X)
 - link:EnableRepoAndroid.adoc[**Android**]
 - link:EnableRepoCocoapods.adoc[**cocoapods**] (iOS)

@@ -9,13 +9,14 @@ For **debian** / **ubuntu** / **raspbian** Linux systems.
 where
 +
   - `<distro>` is `debian` or `ubuntu`
-  - `<release>` is `stretch`, `buster`, `bionic`, `eoan` etc.
+  - `<release>` is `stretch`, `buster`, etc. in case of `<distro> = debian`
+  - `<release>` is `bionic`, `focal`, etc. in case of `<distro> = ubuntu`
 +
 
 . Import APT key
 
   sudo apt install dirmngr
-  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+  sudo apt-key adv --keyserver https://cppfw.jfrog.io/artifactory/api/gpg/key/public --recv-keys 0D76C39F3F352BAA9A42442AF57F79447F525F7D
 
 . Update apt packages
 
