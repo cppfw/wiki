@@ -85,6 +85,14 @@ int a = 3.14159f + 2.7f + some_function() +
 ....
 
 . Put `template <class param, ...>` on a separate line when declaring templates.
++
+[source,cpp]
+....
+template <class parameter>
+class my_template_class{
+	// ...
+};
+....
 . When function arguments or template arguments are to be split over several lines, the following rules apply:
 .. Continuation indentation is used for argumetns.
 .. Each argument goes on a separate line.
