@@ -1,0 +1,8 @@
+= enable packet system repository
+
+- link:enable_repo_debian.adoc[**deb**] (Linux: `debian`/`ubuntu`/`raspbian`)
+- link:enable_repo_homebrew.adoc[**homebrew**] (Mac OS X)
+- link:enable_repo_android.adoc[**Android**]
+- link:enable_repo_cocoapods.adoc[**cocoapods**] (iOS)
+- link:enable_repo_msys2.adoc[**Msys2**] (Windows)
+- link:enable_repo_nuget.adoc[**Nuget**] (Windows, Visual Studio)
