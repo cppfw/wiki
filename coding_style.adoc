@@ -81,6 +81,7 @@ int function(int a, int b){
 ....
 int a = 3.14159f + 2.7f + some_function() +
 		some_other_function() + 13;
+|->	|->	|
 ....
 
 . Put `template <class param, ...>` on a separate line when declaring templates.
