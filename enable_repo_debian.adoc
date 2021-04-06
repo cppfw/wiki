@@ -8,8 +8,8 @@ For **debian** / **ubuntu** / **raspbian** Linux systems.
 +
 where
 +
-  - `<distro>` is `debian` or `ubuntu`
-  - `<release>` is `stretch`, `buster`, etc. in case of `<distro> = debian`
+  - `<distro>` is `debian`, `ubuntu` or `raspbian`
+  - `<release>` is `stretch`, `buster`, etc. in case of `<distro> = debian/raspbian`
   - `<release>` is `bionic`, `focal`, etc. in case of `<distro> = ubuntu`
 +
 
