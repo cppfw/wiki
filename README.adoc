@@ -2,4 +2,4 @@
 
 link:enable_repo.adoc[set up cppfw repository]
 
-link:naming_conventions.adoc[naming conventions]
+link:coding_style.adoc[coding_style]
