@@ -16,7 +16,7 @@ where
 . Import APT key
 
   sudo apt install dirmngr
-  sudo apt-key adv --keyserver https://cppfw.jfrog.io/artifactory/api/gpg/key/public --recv-keys 0D76C39F3F352BAA9A42442AF57F79447F525F7D
+  sudo apt-key adv --keyserver https://cppfw.jfrog.io/artifactory/api/gpg/key/public --recv-keys 4A949240F79AD8027C6CA2F4953AE777616ADEDF
 
 . Update apt packages
 
