@@ -4,7 +4,7 @@ For **debian** / **ubuntu** / **raspbian** Linux systems.
 
 . Add the repo to your `/etc/apt/sources.list` (needs to be done once):
 +
-  deb http://dl.bintray.com/cppfw/<distro> <release> main
+  deb https://cppfw.jfrog.io/artifactory/<distro> <release> main
 +
 where
 +
