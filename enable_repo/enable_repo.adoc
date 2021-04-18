@@ -1,5 +1,6 @@
 = enable packet system repository
 
+- link:enable_repo_conan.adoc[**conan**] (Linux, Mac OS X, Windows)
 - link:enable_repo_debian.adoc[**deb**] (Linux: `debian`/`ubuntu`/`raspbian`)
 - link:enable_repo_homebrew.adoc[**homebrew**] (Mac OS X)
 - link:enable_repo_android.adoc[**Android**]
