@@ -15,8 +15,11 @@ where
 
 . Import APT key
 
-  sudo apt install dirmngr
+  sudo apt install dirmngr curl
+  
   sudo apt-key adv --keyserver https://cppfw.jfrog.io/artifactory/api/gpg/key/public --recv-keys 4A949240F79AD8027C6CA2F4953AE777616ADEDF
+  
+  curl --silent --show-error http://gagis.hopto.org/repo/cppfw/pubkey.gpg | sudo apt-key add -
 
 . Update apt packages
 
