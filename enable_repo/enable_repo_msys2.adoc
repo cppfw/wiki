@@ -6,6 +6,10 @@ For Windows Msys2 environment (pacman packet manager).
 
 . launch **Msys2** shell (`msys`/`mingw32`/`mingw64`)
 
+. import `cppfw` public key
+
+  curl --silent --show-error http://gagis.hopto.org/repo/cppfw/pubkey.gpg | pacman-key --add -
+
 . Add `cppfw` repositories to `/etc/pacman.conf` (needs to be done once)
 
   echo -e '[cppfw_msys]\nSigLevel = Optional TrustAll\nServer = https://cppfw.jfrog.io/artifactory/msys2/msys' >> /etc/pacman.conf
