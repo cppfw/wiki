@@ -6,7 +6,7 @@ In the `build.gradle` right before the `dependencies` section (not iside of it) 
 
   repositories {
       maven {
-          url 'https://cppfw.jfrog.io/artifactory/android/'
+          url 'http://gagis.hopto.org/nexus/repository/android/'
       }
   }
 
@@ -14,7 +14,7 @@ so that it looks something like
 
   repositories {
       maven {
-          url 'https://cppfw.jfrog.io/artifactory/android/'
+          url 'http://gagis.hopto.org/nexus/repository/android/'
       }
   }
   dependencies {
