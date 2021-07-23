@@ -12,9 +12,9 @@ For Windows Msys2 environment (pacman packet manager).
 
 . Add `cppfw` repositories to `/etc/pacman.conf` (needs to be done once)
 
-  echo -e '[cppfw_msys]\nSigLevel = Optional TrustAll\nServer = https://cppfw.jfrog.io/artifactory/msys2/msys' >> /etc/pacman.conf
-  echo -e '[cppfw_mingw64]\nSigLevel = Optional TrustAll\nServer = https://cppfw.jfrog.io/artifactory/msys2/mingw64' >> /etc/pacman.conf
-  echo -e '[cppfw_mingw32]\nSigLevel = Optional TrustAll\nServer = https://cppfw.jfrog.io/artifactory/msys2/mingw32' >> /etc/pacman.conf
+  echo -e '[cppfw_msys]\nSigLevel = Optional TrustAll\nServer = http://gagis.hopto.org/repo/cppfw/msys2/msys' >> /etc/pacman.conf
+  echo -e '[cppfw_mingw64]\nSigLevel = Optional TrustAll\nServer = http://gagis.hopto.org/repo/cppfw/msys2/mingw64' >> /etc/pacman.conf
+  echo -e '[cppfw_mingw32]\nSigLevel = Optional TrustAll\nServer = http://gagis.hopto.org/repo/cppfw/msys2/mingw32' >> /etc/pacman.conf
 
 . Install some package
 
