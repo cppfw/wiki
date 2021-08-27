@@ -15,8 +15,8 @@ where
 
 . Import APT key
 
-  sudo apt install dirmngr curl
-  curl --silent --show-error http://gagis.hopto.org/repo/cppfw/pubkey.gpg | sudo apt-key add -
+  sudo apt install curl
+  curl --silent --show-error http://gagis.hopto.org/repo/cppfw/pubkey.gpg | sudo tee -a /etc/apt/trusted.gpg.d/cppfw.asc
 
 . Update apt packages
 
