@@ -7,6 +7,7 @@ In the `build.gradle` right before the `dependencies` section (not iside of it) 
   repositories {
       maven {
           url 'http://gagis.hopto.org/nexus/repository/android/'
+          allowInsecureProtocol = true
       }
   }
 
@@ -15,6 +16,7 @@ so that it looks something like
   repositories {
       maven {
           url 'http://gagis.hopto.org/nexus/repository/android/'
+          allowInsecureProtocol = true
       }
   }
   dependencies {
