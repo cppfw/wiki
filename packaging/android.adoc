@@ -7,7 +7,9 @@
 . remove `android/.idea` directory and add the whole `android` directory to git
 . click `File` -> `New` -> `New Module...`, select `Android Library`, click `Next`
 . as `Module name` enter library name without `lib` prefix, click `Finish`, agree to add new files to git
-. open file `android/build.gradle` and add `classpath 'com.ydq.android.gradle.build.tool:nativeBundle:1.0.6'` to `buildscript` -> `dependencies`, in the same clasue change android gradle plugin version to `3.4.2` as build fails on `travic-ci.org` for some reason with later versions of the plugin
+. open file `android/build.gradle`
+.. add `classpath 'io.github.howardpang:androidNativeBundle:1.1.0'` to `buildscript` -> `dependencies`, in the same clasue change android gradle plugin version to `7.0.2`
+.. add `mavenCentral()` to `buildscript` -> `repositories` and `allprojects` -> `repositories`
 . open file `android/<library-name>/build.gradle` file
 . add the following two lines right after the first line which imports android plugin
 +
