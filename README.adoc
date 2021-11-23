@@ -2,4 +2,4 @@
 
 link:enable_repo/enable_repo.adoc[set up cppfw repository]
 
-link:coding_style.adoc[coding_style]
+link:coding_style.adoc[coding style]
