@@ -46,12 +46,13 @@
 .... 
   repositories {
       maven {
-          url 'https://dl.bintray.com/igagis/android/'
+          url 'http://gagis.hopto.org/nexus/repository/android/'
+          allowInsecureProtocol = true
       }
   }
   dependencies {
-      implementation 'io.github.igagis:utki:+'
-      implementation 'io.github.igagis:opros:+'
+      implementation 'io.github.cppfw:utki:+'
+      implementation 'io.github.cppfw:papki:+'
   }
 ....
 
@@ -69,7 +70,8 @@
   }
 
   afterEvaluate {
-      copy_aar.dependsOn(assembleRelease)
+      copy_aar.dependsOn(assembleRelease) // TODO: is this needed?
+	  copy_aar.dependsOn(bundleStaticLibRelease)
   }
 ....
 
@@ -96,9 +98,9 @@
 . CI build command
 +
 ....
-  (cd android && ./gradlew copy_aar) &&
-  myci-apply-version.sh -v $PACKAGE_VERSION android/*.pom.in &&
-  myci-apply-version.sh -v $PACKAGE_VERSION android/*.aar.in --filename-only;
+  (cd android && ./gradlew copy_aar --warning-mode all) &&
+  myci-apply-version.sh --version $PACKAGE_VERSION android/*.pom.in &&
+  myci-apply-version.sh --version $PACKAGE_VERSION android/*.aar.in --filename-only;
 ....
 
 . CI deploy command
