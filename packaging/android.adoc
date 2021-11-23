@@ -11,14 +11,14 @@
 .. add `classpath 'io.github.howardpang:androidNativeBundle:1.1.0'` to `buildscript` -> `dependencies`, in the same clasue change android gradle plugin version to `7.0.2`
 .. add `mavenCentral()` to `buildscript` -> `repositories` and `allprojects` -> `repositories`
 . open file `android/<library-name>/build.gradle` file
-. add the following two lines right after the first line which imports android plugin
+.. add the following two lines right after the first line which imports android plugin
 +
 ....
   apply plugin: 'com.ydq.android.gradle.native-aar.export' // must go after android gradle plugin
   apply plugin: 'com.ydq.android.gradle.native-aar.import' // must go after android gradle plugin
 ....
 
-. into the `android/defaultConfig` clause add
+.. into the `android/defaultConfig` clause add
 +
 ....
   externalNativeBuild {
@@ -28,7 +28,7 @@
   }
 ....
 
-. into the `android` clause add
+.. into the `android` clause add
 +
 ....
   nativeBundleExport {
@@ -43,7 +43,7 @@
   }
 ....
  
-. after `android` clause add the following and edit the dependencies as needed
+.. after `android` clause add the following and edit the dependencies as needed
 +
 .... 
   repositories {
@@ -58,7 +58,7 @@
   }
 ....
 
-. right after that add the following
+.. right after that add the following
 +
 ....
   // copy and rename release AAR to unified name
