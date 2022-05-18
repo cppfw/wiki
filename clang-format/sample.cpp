@@ -19,14 +19,13 @@ public:
 	sample_class_a1(int a) :a(a){}
 };
 
-class sample_class_a2
+class sample_class_a2 : public sample_class_a1
 {};
 
 class sample_class_b : public sample_class_a1, private sample_sssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 {};
 
-// TODO: the comment after : fails to format inheritance list and the comment itself
-class sample_class_c ://some class comment
+class sample_class_c :
 public sample_class_a1, public sample_class_a2
 {
 public:

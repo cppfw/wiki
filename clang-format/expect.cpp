@@ -18,40 +18,46 @@
  */
 class sample_class_a1
 {
-	int a;
+    int a;
 
 public:
-	sample_class_a1(int a) :
-		a(a)
-	{}
+    sample_class_a1(int a) :
+        a(a)
+    {}
 };
 
-class sample_class_a2
+class sample_class_a2 : public sample_class_a1
 {};
 
-class sample_class_b : public sample_class_a1
+class sample_class_b :
+    public sample_class_a1,
+    private sample_sssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 {};
 
-class sample_class_c : // some class comment
-	public sample_class_a1,
-	public sample_class_a2
+class sample_class_c : public sample_class_a1, public sample_class_a2
 {
 public:
-	int a; // some comment
-	int b;
+    int a; // some comment
+    int b;
 
-	sample_class_c(int a, int b) :
-		sample_class_a1(a),
-		a(a),
-		b(b)
-	{}
+    sample_class_c(
+        int a,
+        int b,
+        int ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+    ) :
+        sample_class_a1(a),
+        a(a),
+        b(b)
+    {}
 
-	void func(
-		int a,
-		int b,
-		int cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-	)
-	{
-		std::cout << "a = " << a << std::endl;
-	}
+    void func(
+        int a,
+        int b,
+        int cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+    )
+    {
+        std::cout << "printing values of different variables passed in as arguments to this function" << std::endl
+                  << "the first one would be:" << std::endl
+                  << "a = " << a << std::endl;
+    }
 };
