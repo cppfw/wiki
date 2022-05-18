@@ -9,6 +9,6 @@ cd $script_dir
 
 clang-format sample.cpp > out.cpp
 
-cmp sample.cpp out.cpp
+cmp out.cpp expect.cpp
 
 rm out.cpp

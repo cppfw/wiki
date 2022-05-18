@@ -30,12 +30,12 @@ class sample_class_a2
 class sample_class_b : public sample_class_a1
 {};
 
-class sample_class_c ://some class comment
+class sample_class_c : //
 	public sample_class_a1,
 	public sample_class_a2
 {
 public:
-	int a;//some comment
+	int a; // some comment
 	int b;
 
 	sample_class_c(int a, int b) :
@@ -44,7 +44,8 @@ public:
 		b(b)
 	{}
 
-    void func(int a, int b, int cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc)
+	void
+	func(int a, int b, int cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc)
 	{
 		std::cout << "a = " << a << std::endl;
 	}
