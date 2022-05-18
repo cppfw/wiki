@@ -24,7 +24,7 @@ jobs:
           repo: deb http://apt.llvm.org/${{ matrix.codename }} llvm-toolchain-${{ matrix.codename }} main
           repo-name: llvm
           keys-asc: https://apt.llvm.org/llvm-snapshot.gpg.key
-        install: clang-format
+          install: clang-format
       - name: git clone
         uses: myci-actions/checkout@master
       - name: test .clang-format
