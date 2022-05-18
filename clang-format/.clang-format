@@ -103,6 +103,7 @@ Language: Cpp
 MaxEmptyLinesToKeep: '1'
 NamespaceIndentation: None
 PackConstructorInitializers: Never
+PenaltyReturnTypeOnItsOwnLine: '1000' # do not break after return type if possible
 PointerAlignment: Left
 # QualifierAlignment: Custom # for some reason it increases clang-format run time significantly
 # QualifierOrder: ['inline', 'static', 'const', 'type'] # doesn't work without QualifierAlignment: Custom

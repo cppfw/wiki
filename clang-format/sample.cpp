@@ -1,15 +1,12 @@
-#include "sample.hpp"
-
 #include <algorithm>
 #include <cmath>
-#include <iostream>
-
-#include <morda/widgets/button/push_button.hpp>
 #include <utki/config.hpp>
-
+#include <morda/widgets/button/push_button.hpp>
 #include "some_file.hpp"
-
+#include "some_dir/subdir/some_file.cxx"
+#include "sample.hpp"
 #include "../../some/parent/dir/some_file.h>
+#include <iostream>
 
 /**
  * @brief sample class a1.
