@@ -2,7 +2,6 @@ name: ci
 on:
   push: {branches-ignore: [latest], tags: ['*']}
   pull_request:
-env:
 jobs:
 ##### linux #####
   linux:
