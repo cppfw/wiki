@@ -9,7 +9,7 @@ AlignConsecutiveMacros: 'false'
 AlignConsecutiveAssignments: 'false'
 AlignConsecutiveDeclarations: 'false'
 AlignEscapedNewlines: DontAlign
-AlignOperands: 'false'
+AlignOperands: DontAlign
 AlignTrailingComments: 'false'
 AllowAllArgumentsOnNextLine: 'false'
 # AllowAllConstructorInitializersOnNextLine: 'false' # DEPRECATED
@@ -141,7 +141,7 @@ SpacesInSquareBrackets: 'false'
 Standard: Latest
 TabWidth: '4'
 UseCRLF: 'false'
-# UseTab: ForContinuationAndIndentation
-UseTab: Never
+UseTab: ForContinuationAndIndentation
+# UseTab: Never
 
 ...

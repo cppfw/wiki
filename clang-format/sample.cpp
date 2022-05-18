@@ -40,7 +40,10 @@ public:
 
     void func(int a, int b, int cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc)
 	{
-		std::cout << "printing values of different variables passed in as arguments to this function" << std::endl << "the first one would be:" <<std::endl
+		int w = cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc + cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc + a;
+
+		std::cout //
+		 << "printing values of different variables passed in as arguments to this function" << std::endl << "the first one would be:" <<std::endl
 		<<"a = " << a << std::endl;
 	}
 };
