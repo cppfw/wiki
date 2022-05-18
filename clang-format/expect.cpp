@@ -7,7 +7,9 @@
 #include <morda/widgets/button/push_button.hpp>
 #include <utki/config.hpp>
 
-#include "../../some/parent/dir/some_file.h>
+#include "../../some/parent/dir/some_file.h"
+
+#include "some_dir/subdir/some_file.cxx"
 
 #include "some_file.hpp"
 

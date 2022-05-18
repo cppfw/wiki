@@ -5,7 +5,7 @@
 #include "some_file.hpp"
 #include "some_dir/subdir/some_file.cxx"
 #include "sample.hpp"
-#include "../../some/parent/dir/some_file.h>
+#include "../../some/parent/dir/some_file.h"
 #include <iostream>
 
 /**
