@@ -49,3 +49,12 @@ public:
 		<<"a = " << a << std::endl;
 	}
 };
+
+void func()
+{
+auto out = utki::linq(std::move(in)).select([](auto v) {
+auto r = std::make_pair(std::move(v.second), 13.4f);
+tst::check(v.second.empty(), SL);
+return r;
+}).get();
+}

@@ -9,6 +9,6 @@ cd $script_dir
 
 clang-format sample.cpp > out.cpp
 
-cmp out.cpp expect.cpp
+cmp out.cpp expect.cpp || (echo "error: clang-format test failed" && exit 1)
 
 rm out.cpp
