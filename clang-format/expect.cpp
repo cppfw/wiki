@@ -67,5 +67,26 @@ public:
 			<< "printing values of different variables passed in as arguments to this function" << std::endl
 			<< "the first one would be:" << std::endl
 			<< "a = " << a << std::endl;
+
+		std::cout << "printing values of different variables passed in as arguments to this function" << std::endl
+				  << "the first one would be:" << std::endl
+				  << "a = " << a << std::endl;
+	}
+
+	typename std::conditional<Is_const, const typename C::value_type, typename C::value_type>::type& operator*(
+	) noexcept
+	{
+		return *this->iter_stack.back();
 	}
 };
+
+void func()
+{
+	auto out = utki::linq(std::move(in))
+				   .select([](auto v) {
+					   auto r = std::make_pair(std::move(v.second), 13.4f);
+					   tst::check(v.second.empty(), SL);
+					   return r;
+				   })
+				   .get();
+}
