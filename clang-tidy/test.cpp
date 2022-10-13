@@ -18,6 +18,7 @@ public:
 class derived_class : public sample_class {
 public:
 	int virt_func()override{
+		int* ptr = nullptr;
 		return 20;
 	}
 };
