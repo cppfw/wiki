@@ -1,4 +1,4 @@
-Checks: "bugprone-exception-escape,readability-identifier-naming"
+Checks: "bugprone-exception-escape,readability-identifier-naming,modernize-use-override"
 WarningsAsErrors: '*'
 HeaderFilterRegex: '.*'
 InheritParentConfig: false

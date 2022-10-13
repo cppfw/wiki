@@ -8,6 +8,12 @@
 			"type": "shell",
 			"command": "clang-format/test.sh",
 			"group": "build"
+		},
+		{
+			"label": "test clang-tidy",
+			"type": "shell",
+			"command": "clang-tidy/test.sh",
+			"group": "build"
 		}
 	]
 }

@@ -8,4 +8,16 @@ class sample_class{
 	int var;
 
 	static const int const_var = 10;
+
+	virtual int virt_func(){
+		return 10;
+	}
+public:
+};
+
+class derived_class : public sample_class {
+public:
+	int virt_func()override{
+		return 20;
+	}
 };
