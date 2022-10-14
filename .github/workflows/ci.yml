@@ -18,13 +18,13 @@ jobs:
         run: |
           apt --quiet update --assume-yes
           apt --quiet install --assume-yes git
-      - name: add llvm repo (for clang-format)
+      - name: add llvm repo (for latest clang tools)
         uses: myci-actions/add-deb-repo@master
         with:
           repo: deb http://apt.llvm.org/${{ matrix.codename }} llvm-toolchain-${{ matrix.codename }} main
           repo-name: llvm
           keys-asc: https://apt.llvm.org/llvm-snapshot.gpg.key
-          install: clang-format
+          install: clang-format clang-tidy
       - name: git clone
         uses: myci-actions/checkout@master
       - name: test .clang-format
