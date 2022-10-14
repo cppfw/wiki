@@ -29,3 +29,5 @@ jobs:
         uses: myci-actions/checkout@master
       - name: test .clang-format
         run: clang-format/test.sh
+      - name: test .clang-tidy
+        run: clang-tidy/test.sh
