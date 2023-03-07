@@ -8,8 +8,8 @@
 .. add package dependencies to `def requirements(self):` method
 . edit `conan/test_package/example.cpp` to a simple usage of the library
 . conan will inject dependency compilation/linking flags via `CXXFLAGS`/`LDFLAGS` etc. envirnoment variables, so
-  the only thing needed to be changed in `makefile`s is to add paths to LD_LIBRARY_PATH for running test apps,
-  this can be done by getting paths from `LDFLAGS` variable. `this_test_ld_path := ../../src/out/$(c) $(patsubst -L%,%,$(filter -L%,$(LDFLAGS)))`
+  the only thing needed to be changed in `makefile` is to add paths to `LD_LIBRARY_PATH` for running test apps,
+  this can be done by getting paths from `LDFLAGS` variable. `this_test_ld_path += $(patsubst -L%,%,$(filter -L%,$(LDFLAGS)))`
 . edit CI
 .. add conan jobs
 .. add conan env vars
