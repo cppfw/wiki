@@ -7,7 +7,7 @@ To add `cppfw` conan repository remote:
 
 [source,shell]
 ....
-$ conan remote add cppfw http://gagis.hopto.org/conan
+$ conan remote add cppfw https://gagis.hopto.org/conan
 ....
 
 All `cppfw` packages are from `@cppfw/main` user/channel.
