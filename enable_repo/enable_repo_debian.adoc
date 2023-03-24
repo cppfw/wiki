@@ -4,7 +4,7 @@ For **debian** / **ubuntu** / **raspbian** Linux systems.
 
 . Add the repo to your `/etc/apt/sources.list` (needs to be done once):
 +
-  deb http://gagis.hopto.org/repo/cppfw/<distro> <release> main
+  deb https://gagis.hopto.org/repo/cppfw/<distro> <release> main
 +
 where
 +
@@ -16,7 +16,7 @@ where
 . Import APT key
 
   sudo apt install curl
-  curl --silent --show-error http://gagis.hopto.org/repo/cppfw/pubkey.gpg | sudo tee /etc/apt/trusted.gpg.d/cppfw.asc
+  curl --silent --show-error https://gagis.hopto.org/repo/cppfw/pubkey.gpg | sudo tee /etc/apt/trusted.gpg.d/cppfw.asc
 
 . Update apt packages
 
