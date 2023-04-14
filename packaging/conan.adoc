@@ -1,7 +1,7 @@
 = pack library for conan
 
 . copy `conan` directory from templates to project root
-. edit `conan/conanfile.py.in`
+. edit `conan/conanfile.py`
 .. edit class name accordingly
 .. edit value of class's static variable `name`
 .. edit value of class's static variable `description`
@@ -14,3 +14,4 @@
 .. add conan jobs
 .. add conan env vars
 .. check that `PACKAGE_VERSION` is set to commit hash by default
+.. check that `PACKAGE_VERSION` is passed in to `conan create` command via `--version` command line argument
