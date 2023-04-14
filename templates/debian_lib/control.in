@@ -23,7 +23,7 @@ Description: debugging sources for lib%NAME%$(soname) package.
 Package: lib%NAME%-dev
 Section: libdevel
 Architecture: any
-Depends: lib%NAME%$(soname) (= ${binary:Version}), lib%NAME%$(soname)-dbg (= ${binary:Version}), ${misc:Depends}
+Depends: lib%NAME%$(soname) (= ${binary:Version}), ${misc:Depends}
 Suggests: lib%NAME%-doc
 Description: cross-platform C++ library.
  Some library.
