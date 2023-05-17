@@ -74,6 +74,5 @@ class {{Name}}Conan(ConanFile):
 		self.cpp_info.libs = [self.name]
 
 	def package_id(self):
-
 		# change package id only when minor or major version changes, i.e. when ABI breaks
 		self.info.requires.minor_mode()
