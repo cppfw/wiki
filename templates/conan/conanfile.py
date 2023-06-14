@@ -19,6 +19,9 @@ class {{Name}}Conan(ConanFile):
 
 	def requirements(self):
 		self.requires("utki/[>=1.1.192]@cppfw/main", transitive_headers=True)
+	
+	def build_requirements(self):
+		self.requires("tst/[>=0.3.29]@cppfw/main", visible=False)
 
 	def config_options(self):
 		if self.settings.os == "Windows":
@@ -71,6 +74,5 @@ class {{Name}}Conan(ConanFile):
 		self.cpp_info.libs = [self.name]
 
 	def package_id(self):
-
 		# change package id only when minor or major version changes, i.e. when ABI breaks
 		self.info.requires.minor_mode()
