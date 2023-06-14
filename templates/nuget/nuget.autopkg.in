@@ -2,7 +2,7 @@ configurations {
 	UserPlatformToolset {
 		// Needed because autopackage lacks VS2015+ support
 		key = "PlatformToolset";
-		choices: "v140,v141,v142";
+		choices: "v140,v141,v142,v143";
 	};
 
 	RuntimeLibrary {
@@ -18,15 +18,15 @@ nuget{
 		title: some C++ library;
 		authors: {Ivan Gagis};
 		owners: {Ivan Gagis};
-		licenseUrl: "https://raw.githubusercontent.com/igagis/%NAME%/master/LICENSE";
-		projectUrl: "https://github.com/igagis/%NAME%";
-		iconUrl: "https://github.com/igagis/%NAME%/blob/master/logo.svg";
+		licenseUrl: "https://raw.githubusercontent.com/cppfw/%NAME%/master/LICENSE";
+		projectUrl: "https://github.com/cppfw/%NAME%";
+		iconUrl: "https://github.com/cppfw/%NAME%/blob/master/logo.svg";
 		requireLicenseAcceptance:false;
 		summary: some C++ library;
 
 		description: @"some C++ library";
 		releaseNotes: "Initial release";
-		copyright: Copyright 2020 Ivan Gagis;
+		copyright: Copyright 2023 Ivan Gagis;
 		tags: { native };
 	}
 	dependencies {
@@ -99,5 +99,31 @@ nuget{
 			lib: ..\msvs_solution\x64\v142_Debug_MD\lib%NAME%.lib;
 		}
 
+		//==== v143 tools ====
+
+		[x86,v143,release,MultiThreaded] {
+			lib: ..\msvs_solution\v143_Release_MT\lib%NAME%.lib;
+		}
+		[x86,v143,debug,MultiThreadedDebug] {
+			lib: ..\msvs_solution\v143_Debug_MT\lib%NAME%.lib;
+		}
+		[x64,v143,release,MultiThreaded] {
+			lib: ..\msvs_solution\x64\v143_Release_MT\lib%NAME%.lib;
+		}
+		[x64,v143,debug,MultiThreadedDebug] {
+			lib: ..\msvs_solution\x64\v143_Debug_MT\lib%NAME%.lib;
+		}
+		[x86,v143,release,MultiThreadedDLL] {
+			lib: ..\msvs_solution\v143_Release_MD\lib%NAME%.lib;
+		}
+		[x86,v143,debug,MultiThreadedDebugDLL] {
+			lib: ..\msvs_solution\v143_Debug_MD\lib%NAME%.lib;
+		}
+		[x64,v143,release,MultiThreadedDLL] {
+			lib: ..\msvs_solution\x64\v143_Release_MD\lib%NAME%.lib;
+		}
+		[x64,v143,debug,MultiThreadedDebugDLL] {
+			lib: ..\msvs_solution\x64\v143_Debug_MD\lib%NAME%.lib;
+		}
 	}
 }
