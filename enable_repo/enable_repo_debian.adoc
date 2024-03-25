@@ -2,9 +2,9 @@
 
 For **debian** / **ubuntu** / **raspbian** Linux systems.
 
-. Add the repo to your `/etc/apt/sources.list` (needs to be done once):
+. Add the repo to your `/etc/apt/sources.list.d`:
 +
-  deb https://gagis.hopto.org/repo/cppfw/<distro> <release> main
+  echo "deb https://gagis.hopto.org/repo/cppfw/<distro> <release> main" | sudo tee /etc/apt/sources.list.d/cppfw.list
 +
 where
 +
