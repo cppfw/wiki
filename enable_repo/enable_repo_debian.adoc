@@ -9,8 +9,8 @@ For **debian** / **ubuntu** / **raspbian** Linux systems.
 where
 +
   - `<distro>` is `debian`, `ubuntu` or `raspbian`
-  - `<release>` is `buster`, `bullseye`, etc. in case of `<distro>` is `debian` or `raspbian`
-  - `<release>` is `bionic`, `focal`, etc. in case of `<distro>` is `ubuntu`
+  - `<release>` is `bullseye`, `bookworm` etc. in case `<distro>` is `debian` or `raspbian`
+  - `<release>` is `focal`, `jammy` etc. in case `<distro>` is `ubuntu`
 +
 
 . Import APT key
