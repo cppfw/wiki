@@ -2,6 +2,11 @@
 
 For **debian** / **ubuntu** / **raspbian** Linux systems.
 
+. Import APT key
+
+  sudo apt install curl
+  curl --silent --show-error https://gagis.hopto.org/repo/cppfw/pubkey.gpg | sudo tee /etc/apt/trusted.gpg.d/cppfw.asc
+
 . Add the repo to your `/etc/apt/sources.list.d`:
 +
   echo "deb https://gagis.hopto.org/repo/cppfw/<distro> <release> main" | sudo tee /etc/apt/sources.list.d/cppfw.list
@@ -10,13 +15,8 @@ where
 +
   - `<distro>` is `debian`, `ubuntu` or `raspbian`
   - `<release>` is `bullseye`, `bookworm` etc. in case `<distro>` is `debian` or `raspbian`
-  - `<release>` is `focal`, `jammy` etc. in case `<distro>` is `ubuntu`
+  - `<release>` is `jammy`, `noble` etc. in case `<distro>` is `ubuntu`
 +
-
-. Import APT key
-
-  sudo apt install curl
-  curl --silent --show-error https://gagis.hopto.org/repo/cppfw/pubkey.gpg | sudo tee /etc/apt/trusted.gpg.d/cppfw.asc
 
 . Update apt packages
 
