@@ -1,0 +1,37 @@
+Refer to this instruction https://learn.microsoft.com/en-us/vcpkg/consume/git-registries .
+
+The **cppfw** git registry is: `https://github.com/cppfw/vcpkg-repo/`
+
+Add the registry to the `registries` section of your `vcpkg-configuration.json`, so it looks like this:
+
+....
+{
+    "default-registry": {
+      "kind": "git",
+      "baseline": "5e5d0e1cd7785623065e77eff011afdeec1a3574",
+      "repository": "https://github.com/microsoft/vcpkg"
+    },
+    "registries": [
+      {
+        "kind": "git",
+        "repository": "https://github.com/cppfw/vcpkg-repo/",
+        "baseline": "8c1a3c72c04bbd733fc6e06198b87b966c788c0f",
+        "reference": "main",
+        "packages": [
+            "utki",
+            "papki",
+            "mikroxml",
+            "cssom",
+            "svgdom",
+            "r4",
+            "rasterimage",
+            "agg",
+            "veg",
+            "svgren"
+        ]
+      }
+    ]
+  }
+....
+
+To get the very latest versions of packages, update the `baseline` of the registry to the commit hash of the `main` branch `HEAD`.
