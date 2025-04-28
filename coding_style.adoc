@@ -4,6 +4,7 @@
 
 - Naming convention is defined by `clang-tidy` config file which can be found in `https://github.com/cppfw/tool-configs` repo.
 - factory functions must use word `make` (not `create`, etc.). E.g. `make_object(param1, param2)`.
+- When variable name clashes with type name, then the variable name should have the `_v` suffix.
 
 == C++ code formatting
 
