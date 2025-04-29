@@ -1,0 +1,12 @@
+# TODO: replace <name> with library name
+
+<name> provides CMake targets:
+
+# TODO: EDIT library dependency packages list
+find_package(utki CONFIG REQUIRED)
+find_package(papki CONFIG REQUIRED)
+find_package(ZLIB REQUIRED)
+
+find_package(<name> CONFIG REQUIRED)
+
+target_link_libraries(main PRIVATE <name>::<name>)
