@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 
 include(GNUInstallDirs)
 
-set(name tml)
+# TODO: replace <name> with the library name
+set(name <name>)
 
 project(${name})
 
