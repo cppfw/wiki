@@ -1,8 +1,8 @@
 = Pack library to vcpkg
 
-. copy `templates/vcpkg/cmake` directory as is to the library repo `build/vcpkg` directory and add it to git.
-. copy the `templates/vcpkg/vcpkg` directory as is to the library repo `build/vcpkg` and add it to git.
-. resolve the `TODO:`s in all the files of the `vcpkg` dir
+. copy `templates/cmake` directory as is to the library repo `build/` directory and add it to git.
+. copy the `templates/vcpkg` directory as is to the library repo `build/` and add it to git.
+. resolve `TODO:`-s in all the files of the `vcpkg` and `cmake` directories.
 . add `vcpkg` job to the `.github/workflows/ci.yml`:
 +
 ....
