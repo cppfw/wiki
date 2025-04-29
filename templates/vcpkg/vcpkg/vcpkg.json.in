@@ -1,7 +1,9 @@
+// TODO: replace <name> with the library name
+// TODO: replace cppfw with the appropriate github organization if needed
 {
-    "name": "TODO: library_name",
+    "name": "<name>",
     "version": "$(version)",
-    "homepage": "https://github.com/cppfw/rasterimage",
+    "homepage": "https://github.com/cppfw/<name>",
     "description": "TODO: library short description",
     "license": "MIT",
     "dependencies": [
