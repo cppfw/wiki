@@ -13,7 +13,11 @@
         "baseline": "490ad0c202c135087af5789c655587013ee197be",
         "reference": "main",
         // TODO: list packages to be installed from this repo
-        "packages": [ "utki", "papki" ]
+        "packages": [
+          "myci",
+          "utki",
+          "papki"
+        ]
       }
     ],
     "overlay-ports": [
