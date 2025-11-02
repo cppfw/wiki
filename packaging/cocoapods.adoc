@@ -1,3 +1,5 @@
+= ** DEPRECATED use vcpkg for ios build **
+
 = How to pack a C++ library for cocoapods
 
 . create `xcode` directory in project root

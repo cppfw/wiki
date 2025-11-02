@@ -1,3 +1,5 @@
+= DEPRECATED use vcpkg for windows msvs builds
+
 = Pack library to nuget package
 
 . launch Visual Studio and click `Create a new project`

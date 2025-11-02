@@ -34,4 +34,4 @@ Add the registry to the `registries` section of your `vcpkg-configuration.json`,
   }
 ....
 
-To get the very latest versions of packages, update the `baseline` of the registry to the commit hash of the `main` branch `HEAD`.
+To get the very latest versions of packages, update the `baseline` of the registry to the commit hash of the `main` branch `HEAD` of the registry repo.
