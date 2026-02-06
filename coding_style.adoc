@@ -6,6 +6,33 @@
 - factory functions must use word `make` (not `create`, etc.). E.g. `make_object(param1, param2)`.
 - When variable name clashes with type name, then the variable name should have a `_v` suffix.
 
+=== boolean types
+
+==== variables
+
+Boolean variables should be named as `is_<something>` or obviusly enough to understand from the variable name that it's type is `bool`.
+
+==== return values
+
+When a function retuns a `bool`, then such a function should be named as `is_<something>()` or obviously enough to understand from the function name that it returns `bool`.
+
+==== function arguments
+
+When a function have `bool` arguments, the function should be named in a way that it is obvious that it's argument is a `bool` and the meaning of `true` or `false` passed values is clear.
+Likely, the function will have just one argument (the `bool` one`) and will be called like `set_<something>(bool)`.
+For example: `void set_visible(bool)`, `void set_caching_enabled(bool)`.
+
+When there is a need to have a `bool`-like argument, but the function name is not that obvious about the meaning of a passed in `true`/`false` value, then an `enum` with two descriptive items should be introduced and used as the argument.
+For example:
+```cpp
+enum class button_action{
+    press,
+    release
+};
+
+virtual void on_mouse_button_event(vector2 position, button_action action);
+```
+
 == C++ code formatting
 
 Code formating is defind by `clang-format` config file which can be found in `https://github.com/cppfw/tool-configs` repo.
