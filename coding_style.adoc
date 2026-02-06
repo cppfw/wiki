@@ -19,7 +19,7 @@ When a function returns a `bool`, then such a function should be named as `is_<s
 ==== function arguments
 
 When a function have `bool` arguments, the function should be named in a way that it is obvious that it's argument is a `bool` and the meaning of `true` or `false` passed values is clear.
-Likely, the function will have just one argument (the `bool` one`) and will be n named like `set_<something>(bool)`.
+Likely, the function will have just one argument (the `bool` one`) and will be named like `set_<something>(bool)`.
 For example: `void set_visible(bool)`, `void set_caching_enabled(bool)`.
 
 When there is a need to have a `bool`-like argument, but the function name is not that obvious about the meaning of a passed in `true`/`false` value, then an `enum` with two descriptive items should be introduced and used as the argument.
