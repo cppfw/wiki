@@ -14,7 +14,7 @@ Boolean variables should be named as `is_<something>` or obviusly enough to unde
 
 ==== return values
 
-When a function retuns a `bool`, then such a function should be named as `is_<something>()` or obviously enough to understand from the function name that it returns `bool`.
+When a function returns a `bool`, then such a function should be named as `is_<something>()` or obviously enough to understand from the function name that it returns `bool`.
 
 ==== function arguments
 
